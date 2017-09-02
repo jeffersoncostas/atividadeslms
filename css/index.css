@@ -1,0 +1,44 @@
+body {
+	background-color: #ffffff;
+}
+
+.pag {
+	padding: 45px 20px 45px 20px;
+	margin: 14% 17%;
+	width: 60%;
+	background-color: #ffffff;
+	display: inline-flex;
+}
+
+.bloco {
+	bottom:0;
+	
+	position:relative;
+	margin-top:0px;
+	margin-left:10px;
+	cursor: pointer;
+	padding: 50px 20px;
+	background-color: #efefef;
+	border-radius: 20px;
+	transition-property: top, bottom, box-shadow, margin-top;
+  	transition-duration: 0.2s, 0.2s, 0.2s, 0.1s;
+}
+
+
+.bloco:hover {
+	bottom: 20px;
+	box-shadow: 0px 10px 0px 0px rgba(186, 186, 186, 1);
+}
+
+.bloco:active {
+	margin-top:15px;
+	box-shadow: 0px 0px 0px 0px rgba(186, 186, 186, 1);
+}
+
+
+
+a {
+	font-family: helvetica;
+	color: black;
+	text-decoration: none;
+}
