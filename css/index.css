@@ -12,6 +12,7 @@ body {
 	width: 60%;
 	background-color: #ffffff;
 	display:flex;
+	
 }
 
 .bloco,.bloco-disabled {
@@ -21,17 +22,20 @@ body {
 	position:relative;
 	margin-top:0px;
 	margin-left:10px;
+		background-color:#2daa17 ;
+
 	cursor: pointer;
 	padding: 50px 20px;
-	background-color: #31be17;
-	border-radius: 20px;
-	transition-property: top, bottom, box-shadow, margin-top;
-  	transition-duration: 0.2s, 0.2s, 0.2s, 0.1s;
+	border-radius: 4px;
+	transition:.3s;
 }
 
 
 .bloco:hover {
+	transform: scale(1.05,1.05);
 	bottom: 20px;
+		background-color: #31be17;
+
 	box-shadow: 0px 15px 0px 0px rgba(186, 186, 186, 0.59);
 }
 
