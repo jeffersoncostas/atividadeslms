@@ -1,24 +1,28 @@
 body {
 	background-color: #ffffff;
+	height: auto;
+	width: auto;
+	margin: auto;
 }
 
 .pag {
+	align-content: center;
+	margin:20% 20% 0% 17%;
 	padding: 45px 20px 45px 20px;
-	margin: 14% 17%;
 	width: 60%;
 	background-color: #ffffff;
-	display: inline-flex;
+	display:flex;
 }
 
-.bloco {
+.bloco,.bloco-disabled {
 	bottom:0;
-	
+	color: white;
 	position:relative;
 	margin-top:0px;
 	margin-left:10px;
 	cursor: pointer;
 	padding: 50px 20px;
-	background-color: #efefef;
+	background-color: #31be17;
 	border-radius: 20px;
 	transition-property: top, bottom, box-shadow, margin-top;
   	transition-duration: 0.2s, 0.2s, 0.2s, 0.1s;
@@ -27,12 +31,20 @@ body {
 
 .bloco:hover {
 	bottom: 20px;
-	box-shadow: 0px 10px 0px 0px rgba(186, 186, 186, 1);
+	box-shadow: 0px 15px 0px 0px rgba(186, 186, 186, 0.59);
 }
 
 .bloco:active {
 	margin-top:15px;
 	box-shadow: 0px 0px 0px 0px rgba(186, 186, 186, 1);
+}
+
+.bloco-disabled {
+		font-family: helvetica;
+		color: #919191;
+		cursor: auto;
+		background-color: #ededed;
+
 }
 
 
