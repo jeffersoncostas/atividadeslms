@@ -1,29 +1,22 @@
 body {
 	background-color: #ffffff;
-	height: auto;
-	width: auto;
-	margin: auto;
+
 }
 
 .pag {
-	align-content: center;
-	margin:20% 20% 0% 17%;
 	padding: 45px 20px 45px 20px;
-	width: 60%;
-	background-color: #ffffff;
-	display:flex;
-	
+	background-color: #ffffff;	
+    text-align: center;
 }
 
 .bloco,.bloco-disabled {
-	text-align: center;
-	bottom:0;
+    display: inline-block;
 	color: white;
 	position:relative;
+    bottom:0;
 	margin-top:0px;
 	margin-left:10px;
-		background-color:#2daa17 ;
-
+    background-color:#2daa17 ;
 	cursor: pointer;
 	padding: 50px 20px;
 	border-radius: 4px;
