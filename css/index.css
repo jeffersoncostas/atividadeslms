@@ -1,37 +1,63 @@
-*{
+* {
 	margin: 0px;
 	padding: 0px;
 }
-body {
-	background-color: #ffffff;
 
+body {
+	font-family: sans-serif;
+	background-color: #ffffff;
+}
+
+.info {
+	border-bottom: 10px solid rgba(42, 48, 95, 0.76);
+	position: relative;
+	height: 10vh;
+	background-color: #474f91;
+	animation-name: info;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes info {
+	from {
+		top: -100px;
+	}
+	to {
+		top: 0;
+	}
+}
+
+.info p {
+	font-size: 120%;
+	position: relative;
+	top: 4vh;
+	text-align: center;
+	color: white;
 }
 
 .pag {
 	padding: 45px 20px 45px 20px;
-	background-color: #ffffff;	
-    text-align: center;
+	background-color: #ffffff;
+	text-align: center;
 }
 
-
-
-
-.bloco, .bloco-disabled {
-    display: inline-block;
+.bloco,
+.bloco-disabled {
+	display: inline-block;
 	color: white;
-	position:relative;
-    bottom:0;
-	margin-top:0px;
-	margin-left:10px;
-    background-color:#2daa17 ;
+	position: relative;
+	bottom: 0;
+	margin-top: 0px;
+	margin-left: 10px;
+	background-color: #2daa17;
 	cursor: pointer;
 	padding: 50px 20px;
 	border-radius: 4px;
-	transition:.3s;
+	transition: .3s;
 }
 
-.bloco, .bloco-disabled {
-	
+.bloco,
+.bloco-disabled {
 	animation-name: surgir;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
@@ -39,36 +65,40 @@ body {
 }
 
 @keyframes surgir {
-	
-	0% { transform: scale(0); }
-	30% { transform:scale(1.05, 1.05);}
-	50%{ transform: scale(0.95,0.95);}
-	100% { transform: scale(1,1);}
+	0% {
+		transform: scale(0.5);
+	}
+	30% {
+		transform: scale(1.05, 1.05);
+	}
+	50% {
+		transform: scale(0.95, 0.95);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
 }
 
-
 .bloco:hover {
-	transform: scale(1.05,1.05);
+	
+	transform: scale(1.05, 1.05);
 	bottom: 20px;
-		background-color: #31be17;
-
+	background-color: #31be17;
 	box-shadow: 0px 15px 0px 0px rgba(186, 186, 186, 0.59);
+
 }
 
 .bloco:active {
-	margin-top:15px;
+	margin-top: 15px;
 	box-shadow: 0px 0px 0px 0px rgba(186, 186, 186, 1);
 }
 
 .bloco-disabled {
-		font-family: helvetica;
-		color: #919191;
-		cursor: auto;
-		background-color: #ededed;
-
+	font-family: helvetica;
+	color: #919191;
+	cursor: auto;
+	background-color: #ededed;
 }
-
-
 
 a {
 	font-family: helvetica;
