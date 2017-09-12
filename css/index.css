@@ -35,14 +35,22 @@ body {
 	color: white;
 }
 
-.pag {
+.pag, .prototype {
 	padding: 45px 20px 45px 20px;
 	background-color: #ffffff;
 	text-align: center;
 }
 
+.prototype {
+	
+	background-color: rgba(237, 237, 237, 0.38);
+
+}
+
+
+
 .bloco,
-.bloco-disabled {
+.bloco-disabled,.bloco-prototype {
 	display: inline-block;
 	color: white;
 	position: relative;
@@ -56,8 +64,14 @@ body {
 	transition: .3s;
 }
 
+.bloco-prototype {
+	
+	background-color: #bf5d1f;
+
+}
+
 .bloco,
-.bloco-disabled {
+.bloco-disabled,.bloco-prototype {
 	animation-name: surgir;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
@@ -88,7 +102,16 @@ body {
 
 }
 
-.bloco:active {
+.bloco-prototype:hover{
+	
+	transform: scale(1.05, 1.05);
+	bottom: 20px;
+	background-color: #d96c27;
+	box-shadow: 0px 15px 0px 0px #7e2b12;
+	
+}
+
+.bloco:active, .bloco-prototype:active {
 	margin-top: 15px;
 	box-shadow: 0px 0px 0px 0px rgba(186, 186, 186, 1);
 }
@@ -102,6 +125,11 @@ body {
 
 a {
 	font-family: helvetica;
-	color: black;
 	text-decoration: none;
 }
+
+.prototype-text {
+	
+	font-size: 25px ;
+}
+
