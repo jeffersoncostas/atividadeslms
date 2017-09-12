@@ -1,3 +1,7 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
 body {
 	background-color: #ffffff;
 
@@ -9,7 +13,10 @@ body {
     text-align: center;
 }
 
-.bloco,.bloco-disabled {
+
+
+
+.bloco, .bloco-disabled {
     display: inline-block;
 	color: white;
 	position:relative;
@@ -21,6 +28,22 @@ body {
 	padding: 50px 20px;
 	border-radius: 4px;
 	transition:.3s;
+}
+
+.bloco, .bloco-disabled {
+	
+	animation-name: surgir;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes surgir {
+	
+	0% { transform: scale(0); }
+	30% { transform:scale(1.05, 1.05);}
+	50%{ transform: scale(0.95,0.95);}
+	100% { transform: scale(1,1);}
 }
 
 
