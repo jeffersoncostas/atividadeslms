@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
+
 body {
     font-family: 'Quicksand', sans-serif;
     background: linear-gradient(to bottom, rgb(244, 244, 244) 1%, rgba(214, 214, 214, 1) 100%);
@@ -11,15 +12,15 @@ body {
     background-color: rgb(40, 155, 198);
     position: fixed;
     top: 0px;
-    left: 0px;
+    left: 0px;		
     right: 0px;
     text-align: center;
-    padding: 0px 15px;
+    padding: 0px 1px;
     box-shadow: 0px 14px 28px -8px rgba(0, 0, 0, 0.15);
 }
 
 .campo-articles {
-    margin-top: 190px;
+    margin-top: 12pc;
 }
 
 h1 {
@@ -34,11 +35,13 @@ nav {
 }
 
 a {
-    perspective: 1000px;
     height: 10px;
     width: 10px;
     color: white;
-    padding: 5px 25px 10px;
+	padding-top: 5px;
+	padding-right: 25px;
+	padding-bottom: 10px;
+	padding-left: 25px;
     text-decoration: none;
     transition: all 0.1s;
 }
@@ -59,11 +62,10 @@ h2 {
 .article-3 {
     text-align: center;
     display: block;
-    position: static;
-    box-sizing: content-box;
+    position: relative;
     padding: 20px 20px 20px;
     ;
-    margin: 0px 200px 50px;
+    margin: 0px 1.2in 50px;
     ;
     height: 500px;
     top: 0px;
@@ -89,7 +91,11 @@ h2 {
     border-bottom-color: #d61b1b;
 }
 
-.article-3 {}
+.article-3 {
+	border-bottom-style: groove;
+	border-bottom-color: #d6b91b;
+
+}
 
 .principal {
     padding: 15px 10px 30px 10px;
@@ -108,8 +114,8 @@ h2 {
 }
 
 .images img {
-    padding-left: 20px;
-    height: 250px;
+    padding-left: 3vw;
+    height: 25vh;
     width: auto;
 }
 
