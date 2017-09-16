@@ -10,6 +10,7 @@ body {
 }
 
 .info {
+	font-size: 2vh;
 	border-bottom: 10px solid rgba(42, 48, 95, 0.76);
 	position: relative;
 	height: 10vh;
