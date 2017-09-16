@@ -24,9 +24,9 @@ body {
 }
 
 .logo {
-	text-align: center;
+	text-align: left;
 	font-size: 15px;
-	padding: 16px 0px;
+	padding: 16px 0px 16px 16px;
 	
 }
 .logo-link {
@@ -38,6 +38,8 @@ body {
 }
 
 .logo-link .pontocom {
+	margin: 0px;
+	padding: 0px;
 	color: #4CAF50;
 	font-family: fontawesome;
 }
