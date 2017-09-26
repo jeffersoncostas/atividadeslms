@@ -52,7 +52,7 @@ body {
 
 
 .bloco,
-.bloco-disabled,.bloco-prototype {
+.bloco-disabled,.bloco-prototype,.bloco-trabalho {
 	height: 50px;
 	display: inline-block;
 	color: white;
@@ -72,9 +72,12 @@ body {
 	background-color: #bf5d1f;
 
 }
+.bloco-trabalho{
+	background-color: #d8be30;
+}
 
 .bloco,
-.bloco-disabled,.bloco-prototype {
+.bloco-disabled,.bloco-prototype,.bloco-trabalho {
 	animation-name: surgir;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
@@ -103,6 +106,14 @@ body {
 	background-color: #17be2a;
 	box-shadow: 0px 15px 0px 0px rgba(186, 186, 186, 0.59);
 
+}
+
+.bloco-trabalho:hover{
+	
+	transform: scale(1.05, 1.05);
+	bottom: 20px;
+	background-color: #f4d73a;
+	box-shadow: 0px 15px 0px 0px rgba(222, 177, 74, 0.96);
 }
 
 .bloco-prototype:hover{

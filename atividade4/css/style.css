@@ -60,10 +60,7 @@ body {
 	height: 50px;
 	list-style: none;
 	display: inline-flex;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	vertical-align: middle;
-	overflow: hidden;
+
 }
 
 .nav-top .menu .link {

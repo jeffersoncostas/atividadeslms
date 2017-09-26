@@ -1,0 +1,231 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Verdana';
+	clear: both;
+	overflow-x: hidden;
+}
+
+.nav {
+	box-sizing: border-box;
+	display: block;
+	background: linear-gradient(grey 78.7%, #5f5f5f 100%);
+	box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.42);
+}
+
+.nav .nav-lista {
+	position: relative;
+	text-align: center;
+	list-style: none;
+}
+
+.nav .nav-link {
+	display: inline-block;
+	position: relative;
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+	transition: all 0.4s;
+}
+
+.nav .nav-link:hover {
+	transform: rotatex(1deg);
+	background-color: #50aeff;
+}
+
+.nav .nav-li {
+	padding: 25px;
+	text-align: center;
+}
+
+
+/*dropdown*/
+
+.nav .dropdown-content {
+	opacity: 0;
+	visibility: hidden;
+	top: 100%;
+	font-size: 15px;
+	position: absolute;
+	background-color: #525252;
+	transform: translateY(-15em);
+	z-index: -1;
+	transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+	/*
+	animation-name: descer;
+	animation-duration: 0.8s;
+	animation-timing-function:ease-in;
+*/
+}
+
+.nav .nav-link:hover .dropdown-content {
+	visibility: visible;
+	opacity: 1;
+	z-index: 1;
+	transform: translateY(0%);
+	transition-delay: 0s, 0s, 0.3s;
+}
+
+.nav .dropdown-lista {
+	list-style: none;
+}
+
+.nav .dropdown-lista li {
+	padding: 20px;
+	display: block;
+}
+
+.nav .dropdown-lista li:hover {
+	background-color: #288ee5;
+}
+
+.nav-lateral {
+	padding-top: 20px;
+	box-sizing: border-box;
+	background-color: #525252;
+	box-shadow: 3px 0px 2px rgba(0, 0, 0, 0.35);
+}
+
+.nav-lateral ul {
+	padding-top: 10px;
+	list-style: none;
+}
+
+.nav-lateral span {
+	font-weight: 600;
+	padding: 50px;
+	font-size: 23px;
+	color: #ebca40;
+}
+
+.nav-lateral ul li {
+	cursor: pointer;
+	color: white;
+	padding: 20px;
+}
+
+.nav-lateral ul li:hover {
+	background-color: #d6a728;
+}
+
+.nav-lateral-direita {
+	padding-top: 20px;
+	box-sizing: border-box;
+	box-shadow: -2px 0px 6px rgba(0, 0, 0, 0.21);
+}
+
+.nav-lateral-direita span {
+	padding: 20px;
+	font-size: 24px;
+}
+
+.nav-lateral-direita ul {
+	padding-top: 10px;
+	list-style: none;
+}
+
+.nav-lateral-direita ul li {
+	padding: 20px;
+	color: #888888;
+}
+
+.nav-lateral-direita ul li:hover {
+	cursor: pointer;
+	color: white;
+	background-color: #acacac;
+}
+
+.content {
+	z-index: -1;
+	
+	display: block;
+	box-sizing: border-box;
+	padding: 50px;
+	position: relative;
+}
+
+.center-lua{
+	box-sizing: border-box;
+	height: 50vh;
+	width: 65vw;
+	padding:200px ;
+	animation-name: rodar;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes rodar {
+	from{transform: rotate(0deg)}
+	to{transform: rotate(360deg)}
+	
+}
+
+.terra {
+	position:absolute;
+	box-sizing: border-box;
+	background-image: url(../img/Terra.png);
+	background-size: contain;
+	height: 200px;
+	width: 200px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%)
+	
+}
+
+.lua {
+	
+	background-image: url(../img/Earths_Moon.svg.png);
+	width: 50px;
+	height: 50px;
+	background-size: contain;
+	position: absolute;
+
+}
+
+
+footer {
+	text-align: center;
+	box-sizing: border-box;
+	position: relative;
+	bottom: 0;
+	background-color: #393939;
+	height: 60px;
+	padding: 20px;
+	display: block;
+	width: 100vw
+}
+
+footer span {
+	color: white;
+}
+
+@media screen and (min-width: 600px) {
+	.nav-lateral {
+		float: left;
+		width: 250px;
+		height: calc(100vh - 74px);
+	}
+	.nav-lateral-direita {
+		background-color: white;
+		float:right;
+		width: 200px;
+		height: calc(100vh - 74px);
+	}
+	footer {
+		position: absolute;
+		height: 60px;
+		width: 100vw;
+	}
+	.content {
+		background-color: black;
+		height: calc(100vh - 74px);
+		padding-top: 150px;
+		margin-left: 250px;
+		margin-right:100px;
+	}
+}
