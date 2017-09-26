@@ -37,22 +37,22 @@ body {
 	color: white;
 }
 
-.pag, .prototype {
+.pag,
+.prototype {
 	padding: 45px 20px 45px 20px;
 	background-color: #ffffff;
 	text-align: center;
 }
 
 .prototype {
-	
 	background-color: rgba(237, 237, 237, 0.38);
-
 }
 
-
-
 .bloco,
-.bloco-disabled,.bloco-prototype,.bloco-trabalho {
+.bloco-disabled,
+.bloco-prototype,
+.bloco-trabalho,
+.bloco-prova {
 	height: 50px;
 	display: inline-block;
 	color: white;
@@ -68,16 +68,22 @@ body {
 }
 
 .bloco-prototype {
-	
 	background-color: #bf5d1f;
-
 }
-.bloco-trabalho{
+
+.bloco-trabalho {
 	background-color: #d8be30;
 }
 
+.bloco-prova {
+	background-color: #d8275d;
+}
+
 .bloco,
-.bloco-disabled,.bloco-prototype,.bloco-trabalho {
+.bloco-disabled,
+.bloco-prototype,
+.bloco-trabalho,
+.bloco-prova {
 	animation-name: surgir;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
@@ -100,32 +106,36 @@ body {
 }
 
 .bloco:hover {
-	
 	transform: scale(1.05, 1.05);
 	bottom: 20px;
 	background-color: #17be2a;
 	box-shadow: 0px 15px 0px 0px rgba(186, 186, 186, 0.59);
-
 }
 
-.bloco-trabalho:hover{
-	
+.bloco-trabalho:hover {
 	transform: scale(1.05, 1.05);
 	bottom: 20px;
 	background-color: #f4d73a;
 	box-shadow: 0px 15px 0px 0px rgba(222, 177, 74, 0.96);
 }
 
-.bloco-prototype:hover{
-	
+.bloco-prototype:hover {
 	transform: scale(1.05, 1.05);
 	bottom: 20px;
-	background-color: #d96c27;
+	background-color: #d8275d;
 	box-shadow: 0px 15px 0px 0px #7e2b12;
-	
 }
 
-.bloco:active, .bloco-prototype:active {
+.bloco-prova:hover {
+	transform: scale(1.05, 1.05);
+	bottom: 20px;
+	background-color: #f42e6a;
+	box-shadow: 0px 15px 0px 0px #a31943;
+}
+
+.bloco:active,
+.bloco-prototype:active,
+.bloco-prova:active {
 	bottom: -10px;
 	box-shadow: 0px 0px 0px 0px rgba(186, 186, 186, 1);
 }
@@ -143,7 +153,5 @@ a {
 }
 
 .prototype-text {
-	
-	font-size: 25px ;
+	font-size: 25px;
 }
-
