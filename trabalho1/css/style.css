@@ -7,6 +7,7 @@ body {
 	font-family: 'Verdana';
 	clear: both;
 	overflow-x: hidden;
+	position: relative;
 }
 
 .nav {
@@ -139,6 +140,7 @@ body {
 }
 
 .content {
+	
 	z-index: -1;
 	
 	display: block;
@@ -197,7 +199,8 @@ footer {
 	height: 60px;
 	padding: 20px;
 	display: block;
-	width: 100vw
+	width: 100vw;
+	clear: both;
 }
 
 footer span {
@@ -211,13 +214,16 @@ footer span {
 		height: calc(100vh - 74px);
 	}
 	.nav-lateral-direita {
+		z-index: 5;
+		position: absolute;
+		right: 0px;
+		top:74px;
 		background-color: white;
 		float:right;
 		width: 200px;
 		height: calc(100vh - 74px);
 	}
 	footer {
-		position: absolute;
 		height: 60px;
 		width: 100vw;
 	}
