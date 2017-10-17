@@ -109,7 +109,27 @@ function posteIdeia() {
 
 	} else {
 		divComecar.style.animationName = 'comece-aqui'
+		if (divComecar2.style.animationName == 'comece-aqui') {
 
+			divComecar2.style.animationName = 'comece-aqui-2'
+		}
+
+	}
+
+}
+
+function posteIdeia2() {
+
+	if (divComecar2.style.animationName == 'comece-aqui') {
+		divComecar2.style.animationName = 'comece-aqui-2'
+
+	} else {
+		divComecar2.style.animationName = 'comece-aqui'
+
+		if (divComecar.style.animationName == 'comece-aqui') {
+
+			divComecar.style.animationName = 'comece-aqui-2'
+		}
 	}
 
 }
@@ -117,9 +137,13 @@ function posteIdeia() {
 // postar ideia max height 
 
 let começar = document.querySelector('.botao-comecar');
+let verIdeiasButton = document.querySelector('.ver-ideias');
 let divComecar = document.querySelector('.comece-aqui');
-
+let divComecar2 = document.querySelector('.ver-ideias2')
 começar.addEventListener('click', posteIdeia)
+
+verIdeiasButton.addEventListener('click', posteIdeia2)
+
 
 
 
