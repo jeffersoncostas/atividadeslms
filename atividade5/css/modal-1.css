@@ -1,0 +1,373 @@
+.background-fixo {
+	display: none;
+	z-index: 3;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.74);
+	width: 100vw;
+	height: 100vh;
+}
+
+
+@media screen and (max-width:1366px) {
+	#modal {
+		padding: 0px 40px;
+		width: 35%;
+
+	}
+
+	.sem-conta-popup {
+		padding: 10px;
+
+	}
+
+
+}
+
+@media screen and (min-width:1366px) {
+	#modal {
+		padding: 0px 40px;
+		width: 25%;
+
+	}
+
+	.sem-conta-popup {
+		padding: 20px;
+
+	}
+}
+
+#modal {
+	box-sizing: border-box;
+	transform: translate(200%, 0px);
+	z-index: 4;
+	background-color: #f8f8f8;
+	position: fixed;
+	height: 100vh;
+	right: 0;
+	transition: all 0.8s;
+
+
+}
+
+.deslizar-direita {
+	animation-name: deslizar;
+	animation-duration: 0.8s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes deslizar {
+	0% {
+		transform: translate(200%, 0px)
+	}
+	100% {
+		transform: translate(0px, 0px)
+	}
+
+}
+
+.deslizar-esquerda {
+
+	animation-name: deslizar2;
+	animation-duration: 0.8s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes deslizar2 {
+
+	0% {
+		transform: translate(0px, 0px)
+	}
+	100% {
+		transform: translate(500px, 0px)
+	}
+}
+
+
+
+.deslizar-esquerda {
+
+	animation-name: deslizar3;
+	animation-duration: 0.8s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes deslizar3 {
+
+	0% {
+		transform: translate(0px, 0px)
+	}
+	100% {
+		transform: translate(100%, 0px)
+	}
+}
+
+.voltar-modal {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+	background-color: #272020;
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+	float: left;
+	transition: all 0.3s;
+	opacity: 0;
+	animation-duration: 0.8s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.voltar-modal p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 30px;
+}
+
+
+
+.voltar-modal:hover {
+
+	transform: scale(1.1, 1.1);
+	background-color: rgb(10, 75, 180);
+
+}
+
+.voltar-modal:active {
+	transform: scale(0.9, 0.9);
+
+}
+
+
+.close-modal {
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	background-color: #272020;
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+	float: right;
+	transition: all 0.3s;
+}
+
+
+.close-modal:hover {
+
+	transform: scale(1.1, 1.1);
+	background-color: rgb(180, 10, 10);
+
+}
+
+.close-modal:active {
+	transform: scale(0.9, 0.9);
+
+}
+
+.close-modal p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 30px;
+}
+
+
+/*content*/
+
+#modal .content-modal,
+.content-modal-2 {
+	box-sizing: content-box;
+	padding-top: 100px;
+	padding-left: 40px;
+	padding-right: 40px;
+	animation-duration: 0.8s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+
+}
+
+.content-modal-2 {
+	opacity: 0;
+	display: none;
+	box-sizing: content-box;
+	padding-top: 100px;
+	padding-left: 40px;
+	padding-right: 40px;
+	animation-duration: 0.8s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+
+}
+
+.content-modal span p,
+.content-modal-2 span p {
+	color: #585858;
+	font-size: 30px;
+	text-align: center;
+
+}
+
+.form-login {
+	font-family: karla;
+	padding: 50px 0;
+}
+
+.form-login input {
+	border: solid 0 white;
+	box-sizing: border-box;
+	font-size: 20px;
+	border-radius: 5px;
+	margin-bottom: 10%;
+	width: 100%;
+	height: 5%;
+	padding-left: 80px;
+	box-shadow: 0 3px 0px #48D9CB;
+	outline: none;
+	transition: all 0.3s;
+}
+
+.form-login input:focus {
+	border: solid 2px #48D9CB;
+	box-shadow: none;
+
+}
+
+.button-entrar {
+	background-color: #FFAC1C;
+	box-shadow: 0 4px #c4810d;
+	color: white;
+	height: 7%;
+	font-size: 15px;
+}
+
+.button-entrar p {
+	font-size: 19px;
+
+}
+
+
+.sem-conta {
+	box-sizing: border-box;
+	cursor: pointer;
+	text-align: center;
+	transition: all 0.2s;
+	margin-bottom: 20px;
+
+}
+
+.sem-conta p {
+	font-size: 19px;
+}
+
+.sem-conta:hover {
+	color: rgb(208, 20, 70);
+}
+
+/* popup sem conta*/
+
+@keyframes deslizar-cima {
+	0% {
+		transform: translate(0, 100%)
+	}
+	100% {
+		transform: translate(0, 0)
+	}
+}
+
+@keyframes aparecer {
+	0% {
+		opacity: 0
+	}
+	100% {
+		opacity: 1
+	}
+}
+
+@keyframes desaparecer {
+
+	100% {
+		opacity: 0
+	}
+	0% {
+		opacity: 1
+	}
+}
+
+
+
+@keyframes deslizar-baixo {
+	100% {
+		transform: translate(0, 100%)
+	}
+	0% {
+		transform: translate(0, 0)
+	}
+}
+
+.invisible {
+	width: 100%;
+	height: 20px;
+}
+
+.sem-conta-popup {
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	top: 520px;
+	font-family: 'karla';
+	background-color: rgb(81, 71, 70);
+	height: 100%;
+	width: 480px;
+	transform: translate(0, 100%);
+	animation-duration: 0.4s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+
+}
+
+.triangle {
+	top: -17px;
+	left: 50%;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	background-image: url(../img/triangle.svg);
+	background-repeat: no-repeat;
+
+}
+
+.sem-conta-popup .pop-up-text {
+	text-align: left;
+	cursor: auto;
+	opacity: 0;
+	animation-duration: 0.7s;
+	animation-delay: 0.2s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	color: white;
+}
+
+.sem-conta-popup p {
+	padding: 10px;
+	font-size: 1.5vh;
+}
+
+.sem-conta-popup p:nth-child(1) {
+
+	font-size: 2vh;
+	padding-bottom: 25px;
+}
+
+
+.sem-conta-popup p span {
+	cursor: pointer;
+	color: #48D9CB;
+}

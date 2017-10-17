@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="451.039 60.05 40.541 40.555">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ff286d;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="icone_pesquisar_1_" transform="translate(463.617 72.678)">
+    <path id="Path_5" data-name="Path 5" class="cls-1" d="M66.145,66.21a2.242,2.242,0,0,1-1.364.7,1.511,1.511,0,0,1-1.224-.35L50.515,53.552a1.614,1.614,0,0,1-.315-.524,12.286,12.286,0,0,0,1.434-1.294c.455-.455.874-.944,1.294-1.434a1.317,1.317,0,0,1,.524.315L66.459,63.622A1.834,1.834,0,0,1,66.145,66.21Z" transform="translate(-39.907 -40.004)"/>
+    <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-1" cx="10.28" cy="10.28" r="10.28" transform="translate(-11.163 3.325) rotate(-45)"/>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1212.88 68.356 24.116 33.212">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+
+      .cls-1 {
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="icone_localização_1_" transform="translate(1212.919 68.356)">
+    <path id="Path_6" data-name="Path 6" class="cls-1" d="M22.907,14.811l-9.93,16.835a1.092,1.092,0,0,1-1.915,0L1.133,14.811a1.359,1.359,0,0,1-.151-.857v-.4C1.586,6.494,6.274,1,12.02,1S22.453,6.494,23.058,13.551c0,.151.05.353,0,.454A2.506,2.506,0,0,1,22.907,14.811Z" transform="translate(0)"/>
+    <path id="Path_19" data-name="Path 19" class="cls-2" d="M5.393,0A5.393,5.393,0,1,1,0,5.393,5.393,5.393,0,0,1,5.393,0Z" transform="translate(6.576 5.839)"/>
+  </g>
+</svg>

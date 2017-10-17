@@ -1,0 +1,181 @@
+<head>
+	<meta charset="UTF-8">
+	<title>Tocaqui!</title>
+	<link rel="stylesheet" href="css/css.css">
+	<link rel="stylesheet" href="css/modal-1.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body id="body">
+	<header class="principal">
+		<nav class="nav-1">
+			<div class="logotipo"><img src="img/Group%201.svg" alt="">
+			</div>
+			<div class="logotipo-2"><img src="img/Ativo%201.svg" alt="">
+			</div>
+
+			<div class="centro">
+				<div class="search">
+					<form action="">
+						<input class="busc search-geral" type="text" placeholder="busque por palavra-chave">
+					</form>
+				</div>
+				<div class="espac">
+
+				</div>
+				<div class="search">
+					<form action="">
+						<input class="busc search-gps" type="text" placeholder="busque por localização">
+					</form>
+				</div>
+			</div>
+
+			<div class="menu-1">
+				<ul class="menu-2">
+
+					<div class="dropdown">
+						<li class="menu-3">sobre</li>
+
+						<div class="dropdown-content">
+							<ul>
+								<li>sobre o Tocaqui!</li>
+								<li>quero entrar em contato</li>
+								<li>preciso de ajuda</li>
+							</ul>
+						</div>
+
+					</div>
+					<li class="menu-3" onclick="modal()">já tenho conta!</li>
+					<li class="menu-3" id="cadastro"> não tenho conta :(</li>
+				</ul>
+			</div>
+
+		</nav>
+	</header>
+
+	<div id="content-principal" class="content-principal">
+
+		<div id="modal" class="modal">
+
+			<div class="voltar-modal">
+				<p> &lt; </p>
+			</div>
+
+			<div class="close-modal" onclick="closeModal()">
+				<p>X</p>
+			</div>
+
+			<div class="content-modal">
+				<div class="login-plus-no-account">
+					<span><p>login </p></span>
+
+					<form action="" class="form-login">
+						<input type="text" name="email" placeholder=" meu e-mail">
+						<input type="password" name="password" placeholder="minha senha">
+
+						<div class="button-cadastro button-entrar" name="">
+							<p>entrar no tocaqui!</p>
+						</div>
+					</form>
+
+					<div class="sem-conta">
+						<p>não tenho conta</p>
+						<div class="invisible"></div>
+						<div class="sem-conta-popup">
+
+							<div class="triangle"></div>
+							<div class="pop-up-text">
+								<p> se estiver ainda em dúvida a gente te ajuda.</p>
+								<p>olhe <span>algumas razões</span> que nós recomendamos o Tocaqui para você </p>
+								<p>ou se você preferir pode <span>falar com a gente a qualquer momento</span></p>
+
+								<p></p>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+
+
+			</div>
+			<div class="content-modal-2">
+				<span><p>criar conta</p></span>
+
+			</div>
+
+		</div>
+		<div class="text">
+			<p> no Tocaqui! você publica suas <span>ideias</span> </p>
+			<p>explora as <span>ideias</span> publicadas</p>
+			<p><span>coopera</span> com outras pessoas</p>
+			<p>e ainda gera algum <span>dindin</span> </p>
+			<div class="button-cadastro" onclick="modal()">
+				<p>quero publicar uma ideia!</p>
+			</div>
+
+
+		</div>
+		<div id="bg-fixo" class="background-fixo" onclick="closeModal()"></div>
+
+		<div class="background-gradient">
+
+		</div>
+		<div class="img-fundo">
+		</div>
+		<a href="#content-2" class="conhecer">
+			<p>ver mais </p>
+			<div class="setinha"></div>
+		</a>
+	</div>
+
+	<div id="content-2" class="content-2">
+		<span class="title-1"><p> o que eu posso fazer no Tocaqui! ?</p><b></b></span>
+		<div class="do-blocks">
+			<div class="can-do">
+				<div class="text-do">
+					<span><p>Postar ideias</p></span>
+					<p>Aqui você tira suas ideias do papel e se junta com outras pessoas para ganhar dinheiro, com <span>segurança.</span></p>
+
+					<div class="botao-comecar">
+						<p>Começar</p>
+					</div>
+				</div>
+			</div>
+			<div class="can-do">
+				<div class="text-do">
+					<span><p>Explorar ideias</p></span>
+					<p>Você também pode ver as ideias de outras pessoas próximas e de todo o Brasil, além de poder <span>participar e interagir</span> com elas, muito legal né?</p>
+
+					<div class="botao-comecar">
+						<p>Ver ideias</p>
+					</div>
+				</div>
+			</div>
+			<div class="can-do">
+				<div class="text-do">
+					<span><p>Gerenciar ideias</p></span>
+					<p>A gente dá para você diversas <span>ferramentas</span> para gerenciar as ideias que você participa, assim fica mais fácil. </p>
+
+					<div class="botao-comecar">
+						<p>Vamos lá</p>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+	</div>
+
+	<div id="content-3" class="content-3">
+	</div>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+
+	<script src="js/scripts.js"></script>
+
+</body>
