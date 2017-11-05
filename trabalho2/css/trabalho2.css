@@ -305,7 +305,7 @@ body {
 /*lista de amigos*/
 
 .lista-amigos {
-
+	overflow: auto;
 	box-sizing: border-box;
 	width: 312px;
 	height: 100%;
