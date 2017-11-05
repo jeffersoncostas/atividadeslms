@@ -1,0 +1,631 @@
+* {
+	margin: 0;
+	padding: 0;
+	user-select: none;
+	outline: none;
+
+}
+
+body {
+	font-family: Tahoma;
+	display: flex;
+	background-color: #e7ebf0;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.modal-login {
+	overflow: hidden;
+	position: absolute;
+	display: none;
+
+	justify-content: center;
+	align-items: center;
+	z-index: 6;
+	width: 50%;
+	height: 50%;
+	background-color: #ededed;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.71);
+
+	animation-name: surgir-modal;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-duration: 0.7s;
+	animation-timing-function: ease-out;
+	transition: all 0.7s ease-out;
+}
+
+
+@keyframes surgir-modal {
+	0% {
+		border-radius: 50%;
+		transform: scale(0, 0);
+	}
+
+	60% {
+		border-radius: 0;
+		transform: scale(1.1, 1.1);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+
+@keyframes fechar-modal {
+	100% {
+		border-radius: 50%;
+		transform: scale(0, 0);
+	}
+
+	60% {
+		border-radius: 0;
+		transform: scale(1.1, 1.1);
+	}
+	0% {
+		transform: scale(1, 1);
+	}
+}
+
+
+.modal-login input {
+	border: none;
+	color: white;
+	background-color: rgb(49, 142, 212);
+	outline: none;
+	user-select: none;
+	width: 400px;
+	height: 150px;
+	font-size: 30px;
+	text-align: center;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+}
+
+.modal-login input::placeholder {
+	color: white;
+}
+
+.modal-login .botao-entrar {
+	font-size: 25px;
+	color: rgb(58, 152, 224);
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	position: relative;
+	cursor: pointer;
+	user-select: none;
+	border: solid 2px rgb(58, 152, 224);
+	height: 90px;
+	width: 350px;
+
+	transition: all 0.3s;
+
+
+
+}
+
+@keyframes errar-id {
+
+	to {}
+
+	from {
+		color: white;
+		background-color: rgb(235, 35, 35);
+
+	}
+}
+
+.modal-login .botao-entrar span {
+
+
+	align-self: center;
+
+	/*
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+*/
+}
+
+.modal-login .botao-entrar:hover {
+	width: 100%;
+	background-color: rgb(58, 152, 224);
+
+}
+
+.modal-login .botao-entrar:hover span {
+	color: white;
+
+}
+
+
+.modal-background {
+	display: none;
+	z-index: 5;
+	position: absolute;
+	height: 100%;
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0.66);
+}
+
+
+
+
+
+
+
+/*mensageiro */
+
+.mensageiro {
+
+	position: relative;
+	display: flex;
+	justify-content: center;
+	background-color: white;
+
+}
+
+.corpo-mensageiro {
+	height: 0;
+	opacity: 0;
+	display: none;
+	transition: all 0.5s;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	animation-name: corpomensageiro;
+
+}
+
+@keyframes corpomensageiro {
+	from {
+		opacity: 0;
+		height: 0;
+	}
+	to {
+		opacity: 1;
+		height: 950px
+	}
+}
+
+@keyframes corpomensageiro-out {
+	to {
+		opacity: 0;
+		height: 0;
+	}
+	from {
+		opacity: 1;
+		height: 950px
+	}
+}
+
+
+.header-mensageiro {
+
+	position: relative;
+	width: 400px;
+	box-sizing: border-box;
+	user-select: none;
+	display: inline-block;
+	z-index: 2;
+	background-color: rgb(86, 130, 163);
+	height: 48px;
+	transition: all 0.5s;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	animation-name: header-out;
+
+}
+
+@keyframes header {
+	from {}
+	to {
+		width: 900px;
+	}
+}
+
+@keyframes header-out {
+	from {
+		width: 900px;
+	}
+	to {
+		width: 400px;
+	}
+}
+
+
+.header-mensageiro .nome {
+	padding-left: 50px;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	align-items: center;
+	height: 100%;
+	cursor: pointer;
+	color: white;
+}
+
+.header-mensageiro .menu-nome:hover {
+	background-color: rgb(73, 119, 153);
+}
+
+
+
+
+
+.header-mensageiro .nome-entrar {
+	padding-left: 100px;
+	height: 100%;
+	width: calc(900px - 312px);
+	float: right;
+
+}
+
+.header-mensageiro .nome-entrar .nome-pessoa {
+	padding: 15px 20px 10px;
+
+}
+
+.header-mensageiro .nome-entrar .nome-pessoa .name-person {
+	font-size: 14px;
+	color: white;
+	font-weight: 600;
+}
+
+.header-mensageiro .logar {
+	position: absolute;
+	right: 0;
+	width: 90px;
+	cursor: pointer;
+	box-sizing: border-box;
+	padding: 15px 20px 10px;
+}
+
+.header-mensageiro .logout {
+	position: absolute;
+	right: 0;
+	width: 90px;
+	cursor: pointer;
+	box-sizing: border-box;
+	padding: 15px 20px 10px;
+}
+
+
+.header-mensageiro .entrar {
+	float: right;
+	color: white;
+	user-select: none;
+}
+
+/*lista de amigos*/
+
+.lista-amigos {
+
+	box-sizing: border-box;
+	width: 312px;
+	height: 100%;
+	display: block;
+	position: absolute;
+	left: 0px;
+	background-color: white;
+	border-right: 2px solid #e9ebed;
+	padding-top: 54px;
+
+}
+
+.amigos {
+	position: relative;
+	box-sizing: border-box;
+	padding: 7px 18px 7px 16px;
+	width: 100%;
+	height: 62px;
+	background-color: white;
+	cursor: pointer;
+	user-select: none;
+
+
+
+}
+
+.amigos-surgir {
+
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-duration: 0.5s;
+	animation-name: surgir-amigos
+}
+
+@keyframes surgir-amigos {
+
+	0% {
+		opacity: 0;
+		transform: scale(0, 0);
+		transform: translate(0, -20px)
+	}
+
+
+	100% {
+		opacity: 1;
+		transform: scale(1, 1);
+		transform: translate(0, 0)
+	}
+}
+
+.amigos:hover {
+	background-color: rgba(86, 130, 163, 0.16);
+}
+
+.amigos .imagem-amigo {
+	display: inline-block;
+}
+
+.amigos .imagem-amigo img {
+	border-radius: 50%;
+	height: 48px;
+	width: 48px;
+}
+
+.amigos .nome-amigo {
+	padding-left: 20px;
+	position: absolute;
+	top: 10px;
+	display: inline-block;
+}
+
+.amigos .nome-amigo .span-nome {
+	color: black;
+	font-weight: 600;
+}
+
+.adicionar-grupo {
+	margin-bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	position: relative;
+	cursor: pointer;
+	user-select: none;
+	border: solid 2px rgb(58, 152, 224);
+	height: 48px;
+	width: 53px;
+
+	transition: all 0.3s;
+}
+
+.adicionar-grupo span {
+	font-size: 25px;
+	color: rgb(58, 152, 224);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+.adicionar-grupo:hover {
+	height: 48px;
+	width: 100%;
+	background-color: rgb(58, 152, 224);
+}
+
+.adicionar-grupo:hover span {
+	color: white;
+
+}
+
+.modal-addgrupo {
+	padding: 10px;
+	background-color: rgb(65, 139, 195);
+	transition: all 0.4s;
+	animation-timing-function: ease-in;
+	animation-name: add-grupo;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+
+
+}
+
+.modal2 {
+
+	animation-timing-function: ease-in;
+	animation-name: fechar;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+}
+
+.modal-addgrupo-anim {
+	display: none;
+
+}
+
+@keyframes add-grupo {
+	from {
+		max-height: 0;
+
+
+	}
+	to {
+		max-height: 700px;
+
+	}
+}
+
+
+@keyframes fechar {
+	0% {
+		display: block;
+		max-height: 700px;
+	}
+	90% {
+		max-height: 0px;
+	}
+	100% {
+		display: none;
+	}
+
+
+
+}
+
+.modal-addgrupo form {
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+.modal-addgrupo form input {
+	font-size: 17px;
+	margin-bottom: 10px;
+	color: white;
+	background: none;
+	border: solid white 2px;
+	box-sizing: border-box;
+	padding: 10px;
+	text-align: center;
+	height: 50px;
+	width: 100%;
+	outline: none;
+	transition: all 0.4s;
+}
+
+.modal-addgrupo form input:focus {
+	background: white;
+	color: black;
+	border: solid #58b8ff 2px;
+}
+
+.modal-addgrupo form input::placeholder {
+	color: rgb(255, 255, 255);
+}
+
+.modal-addgrupo form input:focus input::placeholder {
+	color: rgb(59, 59, 59);
+}
+
+.modal-addgrupo .add-grupo {
+	margin: auto;
+	width: 50%;
+	cursor: pointer;
+	background-color: rgb(47, 114, 165);
+	border: solid white 2px;
+	transition: all 0.4s;
+}
+
+.modal-addgrupo .add-grupo:hover {
+	width: 100%;
+}
+
+
+.modal-addgrupo .add-grupo span {
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+/*mensagens enviadas e recebidas*/
+
+.todas-mensagens {
+	overflow-y: auto;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	padding: 20px;
+	z-index: 4;
+	position: absolute;
+	right: 0;
+	bottom: 45px;
+	background: white;
+	height: 90%;
+	width: calc(100% - 312px);
+}
+
+.todas-mensagens .mensagem-recebida {
+	box-sizing: border-box;
+	display: block;
+	padding: 10px;
+	width: 100%;
+}
+
+.todas-mensagens .foto-mensagem {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: white;
+}
+
+.todas-mensagens .foto-mensagem img {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
+
+.name-and-msg {
+	box-sizing: border-box;
+	padding: 0px 15px;
+	display: inline-block;
+}
+
+.todas-mensagens .nome-mensagem {
+	color: #4a4a4a;
+	font-weight: 600;
+
+}
+
+.mensagem-emsi {
+	color: #575757;
+	font-size: 15px;
+	box-sizing: border-box;
+	padding-top: 5px;
+}
+
+
+
+/*Enviar mensagem*/
+
+.mensagens {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.mensagens input {
+	display: none;
+	outline: none;
+	box-sizing: border-box;
+	font-size: 16px;
+	padding-right: 80px;
+	height: 40px;
+	width: 580px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: solid 2px rgba(91, 145, 186, 0);
+	transition: all 0.5s;
+}
+
+.mensagens input:focus {
+	border-bottom: solid 2px rgb(91, 145, 186);
+}
+
+.mensagens .enviar-mensagem {
+	display: none;
+	font-weight: 600;
+	color: rgb(91, 160, 212);
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	user-select: none;
+	cursor: pointer;
+}
+
+.mensagens .enviar-mensagem:hover {
+	color: rgb(91, 145, 186);
+
+}
