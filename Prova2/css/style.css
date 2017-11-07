@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+body {
+	font-family: arial;
+}
+
+.accordeon {
+	margin: auto;
+	background-color: #de2783;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	width: 70%;
+}
+
+.accordeon-e {
+	overflow: hidden;
+}
+
+.titulo {
+	cursor: pointer;
+	color: white;
+	padding: 10px;
+	font-size: 24px;
+	padding-bottom: 10px;
+}
+
+.nota-text {
+	max-height: 0px;
+
+	color: white;
+	background-color: #f575b5;
+	font-size: 19px;
+	transition: all 5s;
+}
+
+.nota-text-aberto {
+
+	max-height: 500px;
+
+}
+
+.enviar {
+	user-select: none;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f575b5;
+	text-align: center;
+	color: white;
+	width: 80px;
+	height: 30px;
+}
