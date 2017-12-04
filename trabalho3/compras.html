@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Loja</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/jquery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+</head>
+
+<body>
+
+
+    <div class="navbar-fixed">
+
+        <nav>
+            <div class="nav-wrapper blue darken-1">
+                <a href="index.html" class="brand-logo">Loja</a>
+
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a id="button-carrinho-compras" class="btn btn-floating blue darken-4"><i class="large material-icons left">shopping_cart
+</i></a></li>
+                    <li><a href="#modal-minhas-compras" id="button-minhas-compras" class="modal-trigger"><i class="large material-icons left">loyalty</i> Minhas compras  </a></li>
+
+
+                    <li><a href="#modal1" id="button-entrar" class="waves-effect waves-light btn indigo darken-4 modal-trigger">Entrar</a></li>
+                    <li><a href="#modal3" id="button-cadastrar" class="waves-effect waves-light btn indigo darken-4 modal-trigger"> Cadastre-se</a></li>
+                    <li><a href="#" id="button-sair" class="waves-effect waves-light btn amber darken-4 ">Sair</a></li>
+                </ul>
+            </div>
+
+
+        </nav>
+
+    </div>
+
+
+
+    <!-- Modal Trigger -->
+    <!--<a class="waves-effect waves-light btn modal-trigger" href="#modal-minhas-compras">Modal</a>-->
+
+    <!-- Modal Structure -->
+    <div id="modal-minhas-compras" class="modal bottom-sheet">
+        <div class="modal-content" id="modal-content-minhas-compras">
+
+            <h4>Minhas Compras</h4>
+
+            <h5 class="center-align texto-nao-realizou">Você não realizou nenhuma compra</h5>
+
+            <!--
+<div class="card-tap-target z-depth-1">
+
+
+    <img src="https://images-americanas.b2w.io/produtos/01/00/item/132371/1/132371161_1GG.png" alt="">
+    <h6>Smartphone Samsung Galaxy S8+ Dual Chip Android 7.0 Tela 6.2'' 128GB 4G Câmera 12MP - Preto</h6>
+
+    <div class="quantidade-produto">
+        <h5>1</h5>
+    </div>
+    <h7>R$3299</h7>
+
+</div>
+
+<h6 class="left">Sun Dec 03 2017 22:43:58 GMT-0200 (Horário brasileiro de verão)</h6>
+
+<h6 class="right">TOTAL:3299</h6>
+<br><br>
+<div class="divider"></div>-->
+
+
+
+        </div>
+
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Fechar</a>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="container">
+        <p>
+            <h3>Carrinho de compras</h3>
+        </p>
+        <div class="row lista-elementos">
+
+
+        </div>
+        <div class="total-preco2">
+            <h5 id="preco-total">TOTAL:</h5>
+        </div>
+        <a class="waves-effect waves-light btn right light-blue darken-3" id="finalizar-compra"><i class="material-icons left">check</i>finalizar compra</a>
+
+
+    </div>
+
+
+
+
+
+    <script src="js/mustache.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+    <script id="minhas-compras-1" type="text/html">
+
+        <h6 class="left">{{hora}}</h6>
+        <h6 class="right">TOTAL: {{total}}</h6>
+        <br><br>
+        <div class="divider"></div>
+
+
+    </script>
+
+    <script id="produto-carrinho-template" type="text/html">
+
+
+
+
+        <img src="{{imagemProduto}}" alt="">
+        <h6>{{nomeProduto}}</h6>
+
+        <div class="quantidade-produto">
+            <h5>{{quantidade}}</h5>
+        </div>
+        <h7>R${{preco}}</h7>
+
+
+
+
+
+
+
+    </script>
+
+
+    <script src="js/compras.js">
+    </script>
+
+</body>
+
+</html>

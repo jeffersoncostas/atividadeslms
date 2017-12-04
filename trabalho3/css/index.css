@@ -1,0 +1,157 @@
+.card-image {
+    margin: auto;
+    max-width: 200px;
+
+}
+
+.card {
+    padding: 20px;
+    max-width: 300px;
+    font-size: 15px;
+}
+
+
+.card .card-title {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container {
+    padding-top: 70px;
+}
+
+.toast-cadastrar {
+    background-color: #ed3434;
+}
+
+.toast-cadastrar-success {
+    background-color: #21ad26;
+
+
+}
+
+.card-produtos {
+    opacity: 0;
+}
+
+.cards-elementos {
+
+    height: 535px;
+    min-width: 400px;
+}
+
+
+.tap-target-content2 {
+    color: black;
+    width: 100%;
+    height: 100%;
+    padding-top: 55%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.content-lista-carrinho {
+    overflow: auto;
+    width: 100%;
+    height: 75%;
+}
+
+.card-tap-target {
+    position: relative;
+    display: flex;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background-color: white;
+    height: 100px;
+}
+
+.card-tap-target img {
+    align-self: center;
+    width 50px;
+    height: 50px;
+    margin-right: 10%;
+}
+
+.card-tap-target h6 {
+    width: 50%;
+    font-size: 13px;
+    align-self: center;
+}
+
+.button-comprar {
+    top: 50%;
+    left: 55%;
+    position: absolute;
+    align-self: center;
+    margin-left: 20px;
+}
+
+.quantidade-produto {
+    align-self: center;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #b5b5b5;
+}
+
+.quantidade-produto h5 {
+    align-self: center;
+}
+
+.card-tap-target h7 {
+    position: absolute;
+    font-size: 24px;
+    font-weight: 600;
+    right: 25%;
+    bottom: 10%;
+}
+
+.total-preco {
+    color: WHITE;
+    top: 49%;
+    left: 20%;
+    position: absolute;
+    align-self: center;
+    margin-left: 20px;
+}
+
+.total-preco2 {
+    text-align: right;
+}
+
+.divider-minhascompras {
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.divider-minhascompras:last-child {
+
+    margin-bottom: 0px;
+
+}
+
+.pulse-2{
+    
+    
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;    
+    animation-iteration-count: infinite;
+    animation-name: animarpulse
+}
+
+@keyframes animarpulse{
+    
+    0%{transform: scale(1,1)}
+    50%{transform: scale(1.1,1.1);
+        background-color: rgba(255, 245, 0, 0.33);}
+    100%{transform: scale(1,1)}
+}

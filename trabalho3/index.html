@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Loja</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/jquery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+</head>
+
+<body>
+
+
+
+    <!-- Modal 1 Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Entre</h4>
+            <div class="row">
+                <div class="input-field col s12">
+
+                    <input id="email-login" type="email" class="validate">
+                    <label for="email-login">Email*</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="password-login" type="password" class="validate">
+                    <label for="password-login">Password</label>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <a href="#" id="button-entrar-login" class=" waves-effect waves-green btn-flat">Entrar</a>
+        </div>
+
+    </div>
+
+
+
+    <!-- Modal 2 Structure -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h5>Insira a quantidade</h5>
+
+            <form action="#">
+                <p class="range-field">
+                    <input type="range" id="quantidade-produto" min="1" max="20" />
+                </p>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat adicionar-carrinho-pronto">Pronto!</a>
+        </div>
+    </div>
+
+
+
+
+    <!-- Modal 3 Structure -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+
+
+            <h5>Cadastre-se</h5>
+
+            <div class="row">
+                <div class="input-field col s12">
+
+                    <input id="email-cadastrar" type="email" class="validate">
+                    <label for="email-cadastrar">Email*</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="password-cadastrar" type="password" class="validate">
+                    <label for="password-cadastrar">Password* 6 caracteres</label>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+
+            <a href="#!" class=" waves-effect waves-green btn-flat" id="cadastrar-se">Pronto!</a>
+        </div>
+    </div>
+
+
+
+
+    <div class="navbar-fixed ">
+
+        <nav class="nav-extended">
+            <div class="nav-wrapper blue darken-1">
+                <a href="#" class="brand-logo">Loja</a>
+
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a id="button-carrinho-compras" class="btn btn-floating blue darken-4"><i class="large material-icons left">shopping_cart
+</i></a></li>
+                    <li><a href="#modal-minhas-compras" id="button-minhas-compras" class="modal-trigger"><i class="large material-icons left">loyalty</i> Minhas compras  </a></li>
+
+                    <li><a href="#modal1" id="button-entrar" class="waves-effect waves-light btn indigo darken-4 modal-trigger">Entrar</a></li>
+                    <li><a href="#modal3" id="button-cadastrar" class="waves-effect waves-light btn indigo darken-4 modal-trigger"> Cadastre-se</a></li>
+                    <li><a href="#" id="button-sair" class="waves-effect waves-light btn amber darken-4 ">Sair</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-content blue darken-1">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab"><a class="active" href="#smartphones">Smartphones</a></li>
+                    <li class="tab disabled"><a href="#test2">Computadores</a></li>
+                    <li class="tab disabled"><a href="#test3">Notbooks</a></li>
+                    <li class="tab disabled"><a href="#test4">Periféricos</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+
+
+    <div class="tap-target  light-blue lighten-1 " id="tap-target12" data-target="button-carrinho-compras">
+        <div class="tap-target-content2 ">
+            <div class="total-preco">
+                <h5 id="preco-total">TOTAL:</h5>
+            </div>
+            <a class="waves-effect waves-light btn pink accent-3 button-comprar" id="comprar-button">Comprar</a>
+            <div class="content-lista-carrinho">
+
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div id="modal-minhas-compras" class="modal bottom-sheet">
+        <div class="modal-content" id="modal-content-minhas-compras">
+
+            <h4>Minhas Compras</h4>
+
+            <h5 class="center-align texto-nao-realizou">Você não realizou nenhuma compra</h5>
+
+            <!--
+<div class="card-tap-target z-depth-1">
+
+
+    <img src="https://images-americanas.b2w.io/produtos/01/00/item/132371/1/132371161_1GG.png" alt="">
+    <h6>Smartphone Samsung Galaxy S8+ Dual Chip Android 7.0 Tela 6.2'' 128GB 4G Câmera 12MP - Preto</h6>
+
+    <div class="quantidade-produto">
+        <h5>1</h5>
+    </div>
+    <h7>R$3299</h7>
+
+</div>
+
+<h6 class="left">Sun Dec 03 2017 22:43:58 GMT-0200 (Horário brasileiro de verão)</h6>
+
+<h6 class="right">TOTAL:3299</h6>
+<br><br>
+<div class="divider"></div>-->
+
+
+
+        </div>
+
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Fechar</a>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="container">
+
+        <div class="row lista-elementos">
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <script src="js/mustache.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+    <script id="minhas-compras-1" type="text/html">
+
+        <h6 class="left">{{hora}}</h6>
+        <h6 class="right">TOTAL: {{total}}</h6>
+        <br><br>
+        <div class="divider"></div>
+
+
+    </script>
+
+    <script id="produto-template" type="text/html">
+
+
+
+
+        <div class="card hoverable cards-elementos">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="{{imagemProduto}}">
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">{{nomeProduto}} <i class="material-icons right">more_vert</i></span>
+                <p>
+                    <h5>R${{preco}}</h5>
+                </p>
+                <br>
+                <form action="#">
+                    <input id="quantidade{{idProduto}}" placeholder="Quantidade" type="number">
+                </form>
+                <p> <a href="#" id="{{idProduto}}"> <i class="material-icons left" >add_shopping_cart</i>Adicionar ao carrinho</a></p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{{nomeProduto}}<i class="material-icons right">close</i></span>
+                <p>{{descricaoProduto}}</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </script>
+
+    <script id="produto-template-2" type="text/html">
+
+
+
+
+        <div class="card hoverable cards-elementos">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="{{imagemProduto}}">
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">{{nomeProduto}} <i class="material-icons right">more_vert</i></span>
+                <p>
+                    <h5>R${{preco}}</h5>
+                </p>
+                <br>
+
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{{nomeProduto}}<i class="material-icons right">close</i></span>
+                <p>{{descricaoProduto}}</p>
+            </div>
+        </div>
+
+
+
+
+    </script>
+
+
+    <script id="produto-carrinho-template" type="text/html">
+
+
+
+
+        <img src="{{imagemProduto}}" alt="">
+        <h6>{{nomeProduto}}</h6>
+
+        <div class="quantidade-produto">
+            <h5>{{quantidade}}</h5>
+        </div>
+        <h7>R${{preco}}</h7>
+
+
+
+
+    </script>
+
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
